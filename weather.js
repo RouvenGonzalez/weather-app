@@ -86,7 +86,7 @@ const key = "37d0b6527c1d62d2c52074602a6d5d55";
 
 //requesting weather data
 function getWeather(latitude, longitude){
-    let api = `http://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${key}`;
+    let api = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${key}`;
 
     fetch(api) .then(function(response){
                         let data = response.json();
